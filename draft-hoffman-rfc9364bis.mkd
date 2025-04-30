@@ -69,15 +69,7 @@ a single reference for other documents that want to refer to DNSSEC.
 
 This document obsoletes RFC 9364.
 
-<!--
-draft-ietf-dnsop-compact-denial-of-existence; RFC Ed
-draft-ietf-dnsop-must-not-ecc-gost; IESG eval
-draft-ietf-dnsop-rfc8624-bis; IESG eval
-draft-ietf-dnsop-must-not-sha1; IESG eval
-draft-ietf-dnsop-dnssec-automation; WG Last Call
-draft-ietf-dnsop-svcb-dane
-draft-ietf-dnsop-cds-consistency
--->
+This document is being tracked at (https://github.com/paulehoffman/rfc9364bis).
 
 --- middle
 
@@ -307,6 +299,17 @@ this document apply here.
 * \[RFC7958\] became {{RFC9718}}
 * \[RFC8499\] became {{RFC9499}}
 * Added new {{RFC9615}}
+
+Likely upcoming changes:
+
+* draft-ietf-dnsop-compact-denial-of-existence; RFC Ed
+* draft-ietf-dnsop-must-not-ecc-gost; IESG eval
+* draft-ietf-dnsop-rfc8624-bis; IESG eval
+* draft-ietf-dnsop-must-not-sha1; IESG eval
+* draft-ietf-dnsop-dnssec-automation; WG Last Call
+* draft-ietf-dnsop-svcb-dane
+* draft-ietf-dnsop-cds-consistency
+
 
 # Acknowledgements
 
