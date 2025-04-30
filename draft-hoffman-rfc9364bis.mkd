@@ -101,7 +101,7 @@ data in the DNS.
 More than 15 years after the DNSSEC specification was published, it
 is still not widely deployed.  Recent estimates are that fewer than
 10% of the domain names used for websites are signed, and only around
-a third of queries to recursive resolvers are validated.  However,
+a third of queries go to recursive resolvers that validate.  However,
 this low level of deployment does not affect whether using DNSSEC is
 a best current practice; it just indicates that the value of
 deploying DNSSEC is often considered lower than the cost.
