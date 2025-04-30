@@ -67,6 +67,8 @@ purpose is to state that using DNSSEC for origin authentication of
 DNS data is the best current practice.  A third purpose is to provide
 a single reference for other documents that want to refer to DNSSEC.
 
+This document obsoletes RFC 9364.
+
 <!--
 draft-ietf-dnsop-compact-denial-of-existence; RFC Ed
 draft-ietf-dnsop-must-not-ecc-gost; IESG eval
@@ -298,6 +300,10 @@ All of the security considerations from all of the RFCs referenced in
 this document apply here.
 
 --- back
+
+# Changes Since RFC 9364
+
+Something goes here
 
 # Acknowledgements
 
