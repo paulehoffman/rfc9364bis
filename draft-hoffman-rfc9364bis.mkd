@@ -303,7 +303,10 @@ this document apply here.
 
 # Changes Since RFC 9364
 
-Something goes here
+* \[GOST-SIGN\] became {{RFC9558}}
+* \[RFC7958\] became {{RFC9718}}
+* \[RFC8499\] became {{RFC9499}}
+* Added new {{RFC9615}}
 
 # Acknowledgements
 
