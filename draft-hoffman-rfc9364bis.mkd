@@ -1,7 +1,7 @@
 ---
 title: DNS Security Extensions (DNSSEC)
 abbrev: DNSSEC
-docname: draft-hoffman-rfc9364bis-00
+docname: draft-hoffman-rfc9364bis-01
 ipr: trust200902
 submissiontype: IETF
 cat: bcp
@@ -55,6 +55,11 @@ informative:
   RFC9558:
   RFC9615:
   RFC9718:
+  I-D.ietf-dnsop-compact-denial-of-existence:
+  I-D.ietf-dnsop-rfc8624-bis:
+  I-D.ietf-dnsop-must-not-sha1:
+  I-D.ietf-dnsop-must-not-ecc-gost:
+  
 
 --- abstract
 
@@ -295,20 +300,21 @@ this document apply here.
 
 # Changes Since RFC 9364
 
-* \[GOST-SIGN\] became {{RFC9558}}
-* \[RFC7958\] became {{RFC9718}}
-* \[RFC8499\] became {{RFC9499}}
-* Added new {{RFC9615}}
+This document obsoletes RFC 9364, which is BCP 237.
+The changes from that document are:
 
-Likely upcoming changes:
+- {{RFC9558}} was added to this document
+- RFC 7958 became {{RFC9718}}
+- RFC 8499 became {{RFC9499}}
+- {{RFC9615}} was added to this document
 
-* draft-ietf-dnsop-compact-denial-of-existence; RFC Ed
-* draft-ietf-dnsop-must-not-ecc-gost; IESG eval
-* draft-ietf-dnsop-rfc8624-bis; IESG eval
-* draft-ietf-dnsop-must-not-sha1; IESG eval
-* draft-ietf-dnsop-dnssec-automation; WG Last Call
-* draft-ietf-dnsop-svcb-dane
-* draft-ietf-dnsop-cds-consistency
+The following drafts are currently in the RFC Editor's queue and will added here when they become RFCs.
+
+- {{I-D.ietf-dnsop-compact-denial-of-existence}}, "Compact Denial of Existence in DNSSEC"
+- {{I-D.ietf-dnsop-rfc8624-bis}}, "DNSSEC Cryptographic Algorithm Recommendation Update Process"
+- {{I-D.ietf-dnsop-must-not-sha1}}, "Deprecating the use of SHA-1 in DNSSEC signature algorithms"
+- {{I-D.ietf-dnsop-must-not-ecc-gost}}, "Deprecate usage of ECC-GOST within DNSSEC"
+
 
 
 # Acknowledgements
