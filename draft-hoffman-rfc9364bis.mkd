@@ -59,7 +59,8 @@ informative:
   I-D.ietf-dnsop-rfc8624-bis:
   I-D.ietf-dnsop-must-not-sha1:
   I-D.ietf-dnsop-must-not-ecc-gost:
-  
+  I-D.ietf-dnsop-cds-consistency:
+  I-D.ietf-dnsop-ds-automation:
 
 --- abstract
 
@@ -217,6 +218,7 @@ obvious from reading just the core specifications.
 *  {{RFC7344}} describes using the CDS and CDNSKEY resource records to
 help automate the maintenance of DS records in the parents of
 signed zones.
+(This document is being updated by {{I-D.ietf-dnsop-cds-consistency}} in the DNSOP Working Group.)
 *  {{RFC8078}} extends {{RFC7344}} by showing how to do initial setup of
 trusted relationships between signed parent and child zones.
 *  {{RFC8198}} describes how a validating resolver can emit fewer
@@ -315,6 +317,10 @@ The following drafts are currently in the RFC Editor's queue and will added here
 - {{I-D.ietf-dnsop-must-not-sha1}}, "Deprecating the use of SHA-1 in DNSSEC signature algorithms"
 - {{I-D.ietf-dnsop-must-not-ecc-gost}}, "Deprecate usage of ECC-GOST within DNSSEC"
 
+The following drafts are currently in the DNSOP Working Group and will likley progress to later become RFCs:
+
+- {{I-D.ietf-dnsop-cds-consistency}}, "Clarifications on CDS/CDNSKEY and CSYNC Consistency", which updates {{RFC7344}}.
+- {{I-D.ietf-dnsop-ds-automation}}, "Operational Recommendations for DS Automation"
 
 
 # Acknowledgements
