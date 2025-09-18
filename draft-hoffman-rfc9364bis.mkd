@@ -55,7 +55,7 @@ informative:
   RFC9558:
   RFC9615:
   RFC9718:
-  I-D.ietf-dnsop-compact-denial-of-existence:
+  RFC9824:
   I-D.ietf-dnsop-rfc8624-bis:
   I-D.ietf-dnsop-must-not-sha1:
   I-D.ietf-dnsop-must-not-ecc-gost:
@@ -203,6 +203,10 @@ which algorithms zone operators should or should not use for signing,
 nor which algorithms recursive resolver operators should or should
 not use for validation.
 
+{{I-D.ietf-dnsop-rfc8624-bis}} will make {{RFC8624}} obsolete.
+
+{{I-D.ietf-dnsop-must-not-sha1}} will update {{RFC4034}} and {{RFC 4135}}.
+
 #  Extensions to DNSSEC
 
 The DNSSEC community has extended the DNSSEC core and the
@@ -226,6 +230,9 @@ queries in signed zones that use NSEC and NSEC3 for negative
 caching.
 *  {{RFC9077}} updates {{RFC8198}} with respect to the TTL fields in
 signed records.
+* {{RFC9824}} "describes a technique to generate a signed DNS response
+on demand for a nonexistent name by claiming that the name exists but
+doesn't have any data for the queried record type".
 
 # Additional Documents of Interest
 
@@ -290,6 +297,8 @@ IANA already has three registry groups that relate to DNSSEC:
 The rules for the DNSSEC algorithm registry were set in the core RFCs
 and updated by {{RFC6014}}, {{RFC6725}}, and {{RFC9157}}.
 
+{{I-D.ietf-dnsop-rfc8624-bis}} will update {{RFC9157}}.
+
 This document does not update or create any registry groups or
 registries.
 
@@ -309,10 +318,10 @@ The changes from that document are:
 - RFC 7958 became {{RFC9718}}
 - RFC 8499 became {{RFC9499}}
 - {{RFC9615}} was added to this document
+- Added {{RFC9824}}
 
 The following drafts are currently in the RFC Editor's queue and will added here when they become RFCs.
 
-- {{I-D.ietf-dnsop-compact-denial-of-existence}}, "Compact Denial of Existence in DNSSEC"
 - {{I-D.ietf-dnsop-rfc8624-bis}}, "DNSSEC Cryptographic Algorithm Recommendation Update Process"
 - {{I-D.ietf-dnsop-must-not-sha1}}, "Deprecating the use of SHA-1 in DNSSEC signature algorithms"
 - {{I-D.ietf-dnsop-must-not-ecc-gost}}, "Deprecate usage of ECC-GOST within DNSSEC"
