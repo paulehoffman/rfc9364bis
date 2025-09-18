@@ -205,7 +205,7 @@ not use for validation.
 
 {{I-D.ietf-dnsop-rfc8624-bis}} will make {{RFC8624}} obsolete.
 
-{{I-D.ietf-dnsop-must-not-sha1}} will update {{RFC4034}} and {{RFC 4135}}.
+{{I-D.ietf-dnsop-must-not-sha1}} will update {{RFC4034}} and {{RFC4035}}.
 
 #  Extensions to DNSSEC
 
