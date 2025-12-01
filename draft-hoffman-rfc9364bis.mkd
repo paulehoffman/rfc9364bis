@@ -55,6 +55,7 @@ informative:
   RFC9615:
   RFC9718:
   RFC9824:
+  RFC9859:
   RFC9904:
   RFC9905:
   RFC9906:
@@ -280,6 +281,7 @@ DNSSEC key parameters for zones under their management, including for
 zones that are not currently securely delegated".
 *  {{RFC9718}} "describes the format and publication mechanisms IANA
 has used to distribute the DNSSEC trust anchors".
+* {{RFC9859}} "generalizes and extends the use of DNS NOTIFY ... to allow other types of actions that were previously lacking a trigger mechanism to be triggered via the DNS." The primary action described in the RFC is a new DSYNC record that indicates that "a parent would like child operators to send them a NOTIFY message upon publication of a new CDS/CDNSKEY/CSYNC RRset".
 
 There will certainly be other RFCs related to DNSSEC that are
 published after this one.
@@ -316,8 +318,9 @@ The changes from that document are:
 - RFC 7958 became {{RFC9718}}
 - RFC 8499 became {{RFC9499}}
 - RFC 8624 became {{RFC9904}}
-- {{RFC9615}} was added to this document
+- Added {{RFC9615}}
 - Added {{RFC9824}}
+- Added {{RFC9859}}
 - Added {{RFC9905}}
 - Added {{RFC9906}}
 
