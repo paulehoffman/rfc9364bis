@@ -56,8 +56,8 @@ informative:
   RFC9718:
   RFC9824:
   RFC9904:
-  I-D.ietf-dnsop-must-not-sha1:
-  I-D.ietf-dnsop-must-not-ecc-gost:
+  RFC9905:
+  RFC9906:
   I-D.ietf-dnsop-cds-consistency:
   I-D.ietf-dnsop-ds-automation:
 
@@ -192,7 +192,8 @@ Edwards-curve Digital Signature Algorithm (EdDSA) {{RFC8080}}.  ECDSA
 and EdDSA have become very popular signing algorithms in recent
 years.  The GOST signing algorithm {{RFC9558}} was also adopted but
 has seen very limited use, likely because it is a national algorithm
-specific to a very small number of countries.
+specific to a very small number of countries;
+{{RFC9906}} deprecated its use.
 
 Implementation developers who want to know which algorithms to
 implement in DNSSEC software should refer to {{RFC9904}}.  Note that
@@ -202,7 +203,7 @@ which algorithms zone operators should or should not use for signing,
 nor which algorithms recursive resolver operators should or should
 not use for validation.
 
-{{I-D.ietf-dnsop-must-not-sha1}} will update {{RFC4034}} and {{RFC4035}}.
+{{RFC9905}} updates {{RFC4034}} and {{RFC4035}}.
 
 #  Extensions to DNSSEC
 
@@ -317,11 +318,8 @@ The changes from that document are:
 - RFC 8624 became {{RFC9904}}
 - {{RFC9615}} was added to this document
 - Added {{RFC9824}}
-
-The following drafts are currently in the RFC Editor's queue and will added here when they become RFCs.
-
-- {{I-D.ietf-dnsop-must-not-sha1}}, "Deprecating the use of SHA-1 in DNSSEC signature algorithms"
-- {{I-D.ietf-dnsop-must-not-ecc-gost}}, "Deprecate usage of ECC-GOST within DNSSEC"
+- Added {{RFC9905}}
+- Added {{RFC9906}}
 
 The following drafts are currently in the DNSOP Working Group and will likley progress to later become RFCs:
 
