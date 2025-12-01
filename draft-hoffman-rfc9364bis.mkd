@@ -320,7 +320,6 @@ The changes from that document are:
 
 The following drafts are currently in the RFC Editor's queue and will added here when they become RFCs.
 
-- {{I-D.ietf-dnsop-rfc8624-bis}}, "DNSSEC Cryptographic Algorithm Recommendation Update Process"
 - {{I-D.ietf-dnsop-must-not-sha1}}, "Deprecating the use of SHA-1 in DNSSEC signature algorithms"
 - {{I-D.ietf-dnsop-must-not-ecc-gost}}, "Deprecate usage of ECC-GOST within DNSSEC"
 
