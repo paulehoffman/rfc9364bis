@@ -61,7 +61,7 @@ informative:
   RFC9905:
   RFC9906:
   RFC9975:
-  I-D.ietf-dnsop-ds-automation:
+  RFC10026:
 
 --- abstract
 
@@ -237,6 +237,10 @@ doesn't have any data for the queried record type".
 *  {{RFC9975}} clarifies consistency requirements for CDS and CDNSKEY
 resource records originally described in {{RFC7344}} and used for
 automatic maintenance of DS records.
+*  {{RFC10026}}, a Best Current Practice as well, provides guidelines
+for implementing DS record automation interoperably across suffixes
+(usually TLDs), with recommendations on aspects like acceptance checks,
+timing, and locks.
 
 # Additional Documents of Interest
 
@@ -327,10 +331,7 @@ The main changes from that document are:
 - Added {{RFC9905}}
 - Added {{RFC9906}}
 - Added {{RFC9975}}
-
-The following draft is currently in the DNSOP Working Group and will likley progress to later become RFCs:
-
-- {{I-D.ietf-dnsop-ds-automation}}, "Operational Recommendations for DS Automation"
+- Added {{RFC10026}}
 
 
 # Acknowledgements
