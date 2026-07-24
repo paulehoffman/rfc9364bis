@@ -60,7 +60,7 @@ informative:
   RFC9904:
   RFC9905:
   RFC9906:
-  I-D.ietf-dnsop-cds-consistency:
+  RFC9975:
   I-D.ietf-dnsop-ds-automation:
 
 --- abstract
@@ -223,8 +223,7 @@ trust anchors in an automated fashion.  This method was used in
 obvious from reading just the core specifications.
 *  {{RFC7344}} describes using the CDS and CDNSKEY resource records to
 help automate the maintenance of DS records in the parents of
-signed zones.
-(This document is being updated by {{I-D.ietf-dnsop-cds-consistency}} in the DNSOP Working Group.)
+signed zones.  (This document was updated by {{RFC9975}}.)
 *  {{RFC8078}} extends {{RFC7344}} by showing how to do initial setup of
 trusted relationships between signed parent and child zones.
 *  {{RFC8198}} describes how a validating resolver can emit fewer
@@ -232,9 +231,12 @@ queries in signed zones that use NSEC and NSEC3 for negative
 caching.
 *  {{RFC9077}} updates {{RFC8198}} with respect to the TTL fields in
 signed records.
-* {{RFC9824}} "describes a technique to generate a signed DNS response
+*  {{RFC9824}} "describes a technique to generate a signed DNS response
 on demand for a nonexistent name by claiming that the name exists but
 doesn't have any data for the queried record type".
+*  {{RFC9975}} clarifies consistency requirements for CDS and CDNSKEY
+resource records originally described in {{RFC7344}} and used for
+automatic maintenance of DS records.
 
 # Additional Documents of Interest
 
@@ -324,10 +326,7 @@ The main changes from that document are:
 - Added {{RFC9859}}
 - Added {{RFC9905}}
 - Added {{RFC9906}}
-
-The following draft is in the RFC Editor's queue for publication:
-
-- {{I-D.ietf-dnsop-cds-consistency}}, "Clarifications on CDS/CDNSKEY and CSYNC Consistency", which updates {{RFC7344}}.
+- Added {{RFC9975}}
 
 The following draft is currently in the DNSOP Working Group and will likley progress to later become RFCs:
 
