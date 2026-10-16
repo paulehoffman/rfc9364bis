@@ -60,8 +60,8 @@ informative:
   RFC9904:
   RFC9905:
   RFC9906:
-  I-D.ietf-dnsop-cds-consistency:
-  I-D.ietf-dnsop-ds-automation:
+  RFC9975:
+  RFC10026:
 
 --- abstract
 
@@ -109,13 +109,13 @@ data in the DNS.
 
 More than 15 years after the DNSSEC specification was published, it
 is still not widely deployed.  Recent estimates are that fewer than
-10% of the domain names used for websites are signed, and only around
-a third of queries go to recursive resolvers that validate.  However,
+10% of the domain names used for websites are signed, while around
+40% of queries go to recursive resolvers that validate.  However,
 this low level of deployment does not affect whether using DNSSEC is
 a best current practice; it just indicates that the value of
 deploying DNSSEC is often considered lower than the cost.
-Nonetheless, the significant deployment of DNSSEC beneath some top-
-level domains (TLDs) and the near-universal deployment of DNSSEC for
+Nonetheless, the significant deployment of DNSSEC beneath some
+top-level domains (TLDs) and the near-universal deployment of DNSSEC for
 the TLDs in the DNS root zone demonstrate that DNSSEC is applicable
 for implementation by both ordinary and highly sophisticated domain
 owners.
@@ -223,8 +223,7 @@ trust anchors in an automated fashion.  This method was used in
 obvious from reading just the core specifications.
 *  {{RFC7344}} describes using the CDS and CDNSKEY resource records to
 help automate the maintenance of DS records in the parents of
-signed zones.
-(This document is being updated by {{I-D.ietf-dnsop-cds-consistency}} in the DNSOP Working Group.)
+signed zones.  (This document was updated by {{RFC9975}}.)
 *  {{RFC8078}} extends {{RFC7344}} by showing how to do initial setup of
 trusted relationships between signed parent and child zones.
 *  {{RFC8198}} describes how a validating resolver can emit fewer
@@ -232,9 +231,16 @@ queries in signed zones that use NSEC and NSEC3 for negative
 caching.
 *  {{RFC9077}} updates {{RFC8198}} with respect to the TTL fields in
 signed records.
-* {{RFC9824}} "describes a technique to generate a signed DNS response
+*  {{RFC9824}} "describes a technique to generate a signed DNS response
 on demand for a nonexistent name by claiming that the name exists but
 doesn't have any data for the queried record type".
+*  {{RFC9975}} clarifies consistency requirements for CDS and CDNSKEY
+resource records originally described in {{RFC7344}} and used for
+automatic maintenance of DS records.
+*  {{RFC10026}}, a Best Current Practice as well, provides guidelines
+for implementing DS record automation interoperably across suffixes
+(usually TLDs), with recommendations on aspects like acceptance checks,
+timing, and locks.
 
 # Additional Documents of Interest
 
@@ -324,14 +330,8 @@ The main changes from that document are:
 - Added {{RFC9859}}
 - Added {{RFC9905}}
 - Added {{RFC9906}}
-
-The following draft is in the RFC Editor's queue for publication:
-
-- {{I-D.ietf-dnsop-cds-consistency}}, "Clarifications on CDS/CDNSKEY and CSYNC Consistency", which updates {{RFC7344}}.
-
-The following draft is currently in the DNSOP Working Group and will likley progress to later become RFCs:
-
-- {{I-D.ietf-dnsop-ds-automation}}, "Operational Recommendations for DS Automation"
+- Added {{RFC9975}}
+- Added {{RFC10026}}
 
 
 # Acknowledgements
